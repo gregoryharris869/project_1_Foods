@@ -1,0 +1,23 @@
+{
+  "name": "project_1_Foods",
+  "version": "1.0.0",
+  "description": "Food Website",
+  "main": "script.js",
+  "scripts": {
+    "sass": "sass --watch scss:dist/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregoryharris869/project_1_Foods.git"
+  },
+  "keywords": [],
+  "author": "Gregory Harris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gregoryharris869/project_1_Foods/issues"
+  },
+  "homepage": "https://github.com/gregoryharris869/project_1_Foods#readme",
+  "devDependencies": {
+    "sass": "^1.51.0"
+  }
+}
