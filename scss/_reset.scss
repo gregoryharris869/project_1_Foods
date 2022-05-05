@@ -1,0 +1,49 @@
+// Basic Reset
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+    cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-width: 100%;
+}
+
+// Font-size reset for the headers //
+
+html {
+  font-size: calc(60% + 0.8vmin);
+}
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+* {
+  font-size: 1rem;
+}
+h1 {
+  font-size: 2.2rem;
+}
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}

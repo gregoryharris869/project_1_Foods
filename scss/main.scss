@@ -1,0 +1,45 @@
+@use "reset" as *;
+
+$primary-color: #333;
+$w-color: #fff;
+$txt-color: #000;
+$icon-color: #a79a2d;
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+
+// Section 1
+
+.section1 {
+  width: 100%;
+  height: 100vh;
+  background: $primary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .sectionHeading {
+    font-size: 6rem;
+    font-weight: 900;
+    color: $w-color;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    text-shadow: 0.3rem 0.3rem 0.3rem $txt-color;
+  }
+
+  .section1icons i {
+    font-size: 12rem;
+    color: $icon-color;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0);
+    text-shadow: 0.3rem 0.3rem 0.3rem $txt-color;
+  }
+
+  .section1icons i.change {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
