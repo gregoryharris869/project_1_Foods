@@ -3,26 +3,30 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
 }
 
 /* Reapply the pointer cursor for anchor tags */
-a, button {
-    cursor: revert;
+a,
+button {
+  cursor: pointer;
+  border: none;
 }
 
 /* Remove list styles (bullets/numbers) */
-ol, ul, menu {
-    list-style: none;
+ol,
+ul,
+menu {
+  list-style: none;
 }
 
 /* For images to not be able to exceed their container */
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 // Font-size reset for the headers //
