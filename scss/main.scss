@@ -37,9 +37,11 @@ body {
     position: absolute;
     transform: translate(-50%, -50%) scale(0);
     text-shadow: 0.3rem 0.3rem 0.3rem $txt-color;
+    transition: transform 0.3s;
   }
 
   .section1icons i.change {
     transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s 0.3s;
   }
 }
