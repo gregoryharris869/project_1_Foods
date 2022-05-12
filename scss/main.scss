@@ -1,2 +1,124 @@
 @use "reset" as *;
 
+// variables
+
+$primary-color: #333;
+$secondary-color: #222;
+$w-t-color: #fff;
+$text-shadow: 0.3rem 0.3rem 0.3rem #000;
+$icon-color: #a79a2d;
+
+html {
+  font-size: 62.5%;
+}
+
+// section 1
+
+.section-1 {
+  width: 100%;
+  height: 100vh;
+  background: $primary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.section-heading {
+  font-size: 12rem;
+  font-weight: 900;
+  color: $w-t-color;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-shadow: $text-shadow;
+}
+
+.section-1-icons i {
+  font-size: 35rem;
+  color: $icon-color;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0);
+  text-shadow: $text-shadow;
+  transition: transform 0.3s;
+}
+
+.section-1-icons i.change {
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.3s 0.3s;
+}
+
+/* Section 2 */
+
+.section-2 {
+  width: 100%;
+  height: 100vh;
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10rem 0;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 30rem;
+  background-color: $icon-color;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: $text-shadow;
+  position: relative;
+  transition: transform 0.5s, box-shadow 0.5s;
+
+  &:hover {
+    transform: translateY(-3rem);
+    box-shadow: $text-shadow;
+  }
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-name {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: #000;
+  margin: 2rem 0;
+}
+
+.card-btn {
+  width: 70%;
+  background-color: #222;
+  color: $w-t-color;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  border: none;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.section-3 {
+  background: $primary-color;
+  padding: 5rem 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10rem;
+}
