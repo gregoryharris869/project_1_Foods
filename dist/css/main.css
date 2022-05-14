@@ -13,6 +13,41 @@ html {
   font-size: 62.5%;
 }
 
+.navbar {
+  width: 100%;
+  height: 14rem;
+  background: #000;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.2rem 0.2rem 0.2rem #000;
+}
+
+.navbar-link {
+  color: #a79a2d;
+  margin: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s;
+}
+.navbar-link i {
+  font-size: 7rem;
+}
+.navbar-link span {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+  margin-top: 0.5rem;
+}
+.navbar-link:hover {
+  color: #fff;
+}
+
 .section-1 {
   width: 100%;
   height: 100vh;
@@ -30,7 +65,7 @@ html {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  text-shadow: 0.3rem 0.3rem 0.3rem #000;
+  text-shadow: 0.2rem 0.2rem 0.2rem #000;
 }
 
 .section-1-icons i {
@@ -38,7 +73,7 @@ html {
   color: #a79a2d;
   position: absolute;
   transform: translate(-50%, -50%) scale(0);
-  text-shadow: 0.3rem 0.3rem 0.3rem #000;
+  text-shadow: 0.2rem 0.2rem 0.2rem #000;
   transition: transform 0.3s;
 }
 
@@ -71,13 +106,13 @@ html {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0.3rem 0.3rem 0.3rem #000;
+  box-shadow: 0.2rem 0.2rem 0.2rem #000;
   position: relative;
   transition: transform 0.5s, box-shadow 0.5s;
 }
 .card:hover {
   transform: translateY(-3rem);
-  box-shadow: 0.3rem 0.3rem 0.3rem #000;
+  box-shadow: 0.2rem 0.2rem 0.2rem #000;
 }
 
 .card-img {
@@ -159,7 +194,7 @@ html {
   width: 24vw;
   height: 15vw;
   object-fit: cover;
-  box-shadow: 0.3rem 0.3rem 0.3rem #000;
+  box-shadow: 0.2rem 0.2rem 0.2rem #000;
 }
 
 .gallery-link:hover .food-img {
@@ -211,10 +246,12 @@ html {
 .section-4 {
   width: 100%;
   height: 30vh;
-  background: #222;
+  background-color: #222;
   display: flex;
   justify-content: space-around;
+  padding: 3rem 0;
   position: relative;
+  align-items: flex-start;
 }
 
 .section-4-text {
@@ -232,9 +269,49 @@ html {
   color: #fff;
 }
 
+.sign-up-form {
+  display: flex;
+  align-items: center;
+}
+
+.sign-up-form-input {
+  width: 35rem;
+  height: 5rem;
+  padding: 1rem;
+  border: 0.2rem solid #a79a2d;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: #a79a2d;
+}
+
+.sign-up-form-input::placeholder {
+  color: #a79a2d;
+}
+
+.sign-up-form-btn {
+  position: relative;
+  left: -4.5rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: #333;
+  color: #a79a2d;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
 .copyright {
   position: absolute;
   bottom: 3rem;
+  font-size: 1.7rem;
+  font-weight: 200;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  border-top: 0.1rem solid #fff;
+  padding-top: 6rem;
+  width: 100%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -6,11 +6,51 @@ $primary-color: #333;
 $secondary-color: #222;
 $w-t-color: #fff;
 $b-t-color: #000;
-$text-shadow: 0.3rem 0.3rem 0.3rem #000;
+$text-shadow: 0.2rem 0.2rem 0.2rem #000;
 $icon-color: #a79a2d;
 
 html {
   font-size: 62.5%;
+}
+
+// navbar
+
+.navbar {
+  width: 100%;
+  height: 14rem;
+  background: $b-t-color;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: $text-shadow;
+}
+
+.navbar-link {
+  color: $icon-color;
+  margin: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s;
+
+  i {
+    font-size: 7rem;
+  }
+
+  span {
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  &:hover {
+    color: $w-t-color;
+  }
 }
 
 // section 1
@@ -93,13 +133,13 @@ html {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  color: #000;
+  color: $b-t-color;
   margin: 2rem 0;
 }
 
 .card-btn {
   width: 70%;
-  background-color: #222;
+  background-color: $secondary-color;
   color: $w-t-color;
   border-radius: 1rem;
   font-size: 1.5rem;
@@ -114,7 +154,7 @@ html {
 // section 3
 
 .section-3 {
-  background-color: #333;
+  background-color: $primary-color;
   padding: 5rem 0;
 }
 
@@ -203,7 +243,7 @@ html {
   font-weight: 300;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  color: #fff;
+  color: $w-t-color;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s;
@@ -220,10 +260,12 @@ html {
 .section-4 {
   width: 100%;
   height: 30vh;
-  background: $secondary-color;
+  background-color: $secondary-color;
   display: flex;
   justify-content: space-around;
+  padding: 3rem 0;
   position: relative;
+  align-items: flex-start;
 }
 
 .section-4-text {
@@ -240,7 +282,48 @@ html {
   font-size: 1.5rem;
   color: $w-t-color;
 }
+
+.sign-up-form {
+  display: flex;
+  align-items: center;
+}
+
+.sign-up-form-input {
+  width: 35rem;
+  height: 5rem;
+  padding: 1rem;
+  border: 0.2rem solid $icon-color;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: $icon-color;
+}
+
+.sign-up-form-input::placeholder {
+  color: $icon-color;
+}
+
+.sign-up-form-btn {
+  position: relative;
+  left: -4.5rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: $primary-color;
+  color: $icon-color;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
 .copyright {
   position: absolute;
   bottom: 3rem;
+  font-size: 1.7rem;
+  font-weight: 200;
+  color: $w-t-color;
+  letter-spacing: 0.1rem;
+  border-top: 0.1rem solid $w-t-color;
+  padding-top: 6rem;
+  width: 100%;
+  text-align: center;
 }
